@@ -203,6 +203,15 @@ export default function Home() {
               View selected work <b>↗</b>
             </a>
 
+            {/* DOWNLOAD RESUME */}
+            <a
+              href="/Sai_Ram_SP.pdf"
+              download
+              className="btnGhost"
+            >
+              Download Resume <b>↓</b>
+            </a>
+
             <a href="#contact" className="btnGhost">
               Let&apos;s talk
             </a>
@@ -352,7 +361,10 @@ export default function Home() {
 
         <div className="projectGrid">
           {projects.map((project) => (
-            <article className="project" key={project.number}>
+            <article
+              className="project"
+              key={project.number}
+            >
               <div className="projectTop">
                 <span>{project.number}</span>
 
@@ -454,7 +466,6 @@ export default function Home() {
 
           <span>Hyderabad, India</span>
 
-          {/* Replace with your actual GitHub */}
           <a
             href="https://github.com/s7285595-bot"
             target="_blank"
@@ -463,7 +474,6 @@ export default function Home() {
             GitHub ↗
           </a>
 
-          {/* Replace with your actual LinkedIn */}
           <a
             href="http://www.linkedin.com/in/sairam-ponnala-066a75145"
             target="_blank"
